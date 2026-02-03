@@ -1,0 +1,24 @@
+import openai
+
+def transcrever_audio(caminho_audio):
+    with open(caminho_audio, "rb") as audio_file:
+        transcricao = openai.Audio.transcribe("whisper-1", audio_file)
+    return transcricao["text"]
+
+def obter_resposta_chatgpt(texto_usuario):
+    response = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+        {"role": "system", "content": "Você é um assistente de voz prestativo e conciso."},
+        {"role": "user", "content": texto_usuario}
+      ]
+    )
+    return response.choices[0].message.content
+
+from gtts import gTTS
+import os
+
+def falar_resposta(texto_resposta, lang='pt'):
+    tts = gTTS(text=texto_resposta, lang=lang)
+    tts.save("resposta.mp3")
+    os.system("start resposta.mp3") # Windows
