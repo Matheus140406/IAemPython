@@ -21,4 +21,4 @@ import os
 def falar_resposta(texto_resposta, lang='pt'):
     tts = gTTS(text=texto_resposta, lang=lang)
     tts.save("resposta.mp3")
-    os.system("start resposta.mp3") # Windows
+    os.system("start resposta.mp3")
