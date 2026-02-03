@@ -1,7 +1,3 @@
-Excelente iniciativa em subir o projeto para o GitHub! Analisando o seu repositório IAemPython, notei que você consolidou os desafios de lógica financeira e a implementação da IA conversacional.
-
-Para tornar o seu README.md ainda mais atrativo e profissional (o que ajuda muito em portfólios), aqui está uma versão otimizada com a sintaxe correta do Markdown para o seu caso específico, incluindo badges e uma organização visual clara.
-
 🎙️ IA em Python: Finanças & Voz
 Este repositório reúne uma série de soluções desenvolvidas para unir o mundo das Finanças com a Inteligência Artificial. O projeto está dividido em desafios de lógica de programação para o setor bancário e um sistema de assistência por voz multi-idiomas.
 
